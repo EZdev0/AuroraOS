@@ -1,0 +1,17 @@
+# Dependencies
+/node_modules
+
+# Temporary files
+pdf_images/
+
+# Next.js build output
+/.next/
+/out/
+
+# Production builds
+/build
+
+# Misc
+.DS_Store
+*.pem
+*.log
