@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 273 100% 11%; /* #1A0038 */
+    --foreground: 280 100% 95%; /* Light lavender */
+
+    --card: 273 80% 15%;
+    --card-foreground: 280 100% 95%;
+
+    --popover: 273 90% 13%;
+    --popover-foreground: 280 100% 95%;
+
+    --primary: 273 95% 61%; /* #9D4EDD */
+    --primary-foreground: 300 100% 98%;
+
+    --secondary: 273 50% 25%;
+    --secondary-foreground: 280 100% 95%;
+
+    --muted: 273 30% 30%;
+    --muted-foreground: 280 80% 80%;
+
+    --accent: 291 100% 50%; /* #E900FF */
+    --accent-foreground: 300 100% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 273 50% 25%;
+    --input: 273 50% 25%;
+    --ring: 273 95% 61%;
+
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 273 100% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 273 100% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 273 100% 11%;
+
+    --primary: 273 95% 61%;
+    --primary-foreground: 300 100% 98%;
+
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 273 100% 11%;
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 273 20% 40%;
+
+    --accent: 291 100% 50%;
+    --accent-foreground: 300 100% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 273 95% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
